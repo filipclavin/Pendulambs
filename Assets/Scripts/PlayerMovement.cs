@@ -82,8 +82,6 @@ public class PlayerMovement : NetworkBehaviour
         {
             if (_grounded.Value) JumpRpc();
         };
-
-        Camera.main.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Follow = transform;
     }
 
     // Update is called once per frame
